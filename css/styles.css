@@ -252,19 +252,17 @@ body {
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
-  background-color: #f5f4fa;
+
   border-radius: 4px;
 }
 
 .hero-icon-border:hover,
 .hero-icon-border:focus {
-  border: #2196f3 4px solid;
-  border-radius: 4px;
+  background-color: #f5f4fa;
 }
 
 .after-hero-icon:hover,
 .after-hero-icon:focus {
-  /* border: #2196f3 4px solid; */
   fill: var(--accent-color);
 }
 
@@ -397,6 +395,11 @@ body {
   background-color: var(--primary-title-color);
 }
 
+.command-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .command-link {
   width: 270px;
   height: 260px;
@@ -434,6 +437,24 @@ body {
 }
 
 /* -----------------client------------------------------- */
+.client-icon {
+  fill: rgba(175, 177, 184, 1);
+}
+
+.client-item {
+  border-radius: 4px;
+}
+
+.client-item:hover,
+.client-item:focus {
+  border: var(--accent-color) 1px solid;
+}
+
+.client-item .client-icon:focus,
+.client-item .client-icon:hover {
+  fill: var(--accent-color);
+}
+
 .client-list {
   display: flex;
   justify-content: center;
@@ -441,6 +462,7 @@ body {
 }
 
 .client-title {
+  margin-top: 94px;
   margin-bottom: 50px;
   text-align: center;
   font-weight: bold;
@@ -609,6 +631,12 @@ body {
   margin-left: 8px;
 }
 
+.btn-portfolio {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -622,19 +650,24 @@ body {
   margin-top: 56px;
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-bottom: -30px;
 }
 
 .menu-list {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
+  width: 370px;
+  margin-right: 30px;
   margin-bottom: 30px;
 }
 
 .menu-list {
   cursor: pointer;
-  padding-top: 0px;
+}
+
+.menu-list:hover {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .menu-border {
@@ -644,8 +677,8 @@ body {
   border-bottom: solid 1px rgba(236, 236, 236, 1);
 }
 
-.menu-list:not(:first-child) {
-  margin-left: 30px;
+.menu-list:nth-child(3n) {
+  margin-right: 0;
 }
 
 .menu-title {
